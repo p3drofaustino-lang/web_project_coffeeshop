@@ -186,7 +186,7 @@
   background-position: center;
   background-size: cover;
   color: #000;
-  padding: 100px 0 80px;
+  /* padding: 100px 0 80px; */
   box-sizing: border-box;
 }
 
