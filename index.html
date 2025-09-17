@@ -31,7 +31,7 @@
               <a class="nav__link" href="#recipes">Receitas</a>
             </li>
             <li>
-              <a class="nav__link" href="#reservation">Reservar uma mesa</a>
+              <a class="nav__link" href="#reservations">Reservar uma mesa</a>
             </li>
             <li>
               <a class="nav__link" href="#footer">Contatos</a>
@@ -101,7 +101,62 @@
             </div>
           </div>
         </section>
-        <section class="reservation" id="reservations"></section>
+        <section class="reservation" id="reservations">
+          <h2 class="reservation__title">Reservar uma mesa</h2>
+          <form class="reservation__form form">
+            <fieldset class="form__fieldset">
+              <label for="name" class="form__label">Nome: *</label>
+              <input
+                id="name"
+                class="form__input"
+                type="text"
+                placeholder="Nome"
+                required
+              />
+              <label for="guests-number" class="form__label"
+                >Número de convidados: *</label
+              >
+              <input
+                id="guests-number"
+                class="form__input"
+                type="number"
+                min="1"
+                max="8"
+                placeholder="1-8"
+                required
+              />
+              <label for="datetime-local" class="form__label"
+                >Data e hora: *</label
+              >
+              <input
+                id="datetime-local"
+                class="form__input"
+                type="datetime-local"
+                required
+              />
+              <label for="email" class="form__label">Seu e-mail: *</label>
+              <input
+                id="email"
+                class="form__input"
+                type="email"
+                placeholder="email@email.com"
+                required
+              />
+              <label for="terms" class="form__label form__label_type_checkbox">
+                <input
+                  id="terms"
+                  class="form__checkbox"
+                  type="checkbox"
+                  required
+                />
+                Eu concordo com os termos de uso
+              </label>
+              <button class="form__button" type="submit">
+                Reservar uma mesa
+              </button>
+            </fieldset>
+          </form>
+        </section>
       </main>
       <footer class="footer" id="footer"></footer>
     </div>
