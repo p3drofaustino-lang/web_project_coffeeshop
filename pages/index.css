@@ -196,7 +196,6 @@
 .reservation__title {
   max-width: 385px;
   display: block;
-  margin: 0;
   font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -207,7 +206,8 @@
 
 .reservation__form {
   max-width: 385px;
-  margin: 60px auto 0;
+  margin-top: 60px;
+  width: 100%;
 }
 
 .form__fieldset {
